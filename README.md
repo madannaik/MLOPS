@@ -12,6 +12,6 @@ This project documentation is for data scientists and ML engineers who want to a
 
 # INITIAL SETUP
  * installed linux OS(espcially redhat) 
- * pre installed docker in linux.to install [click here](https://docs.docker.com/engine/install/)
- * pre installed jenkins in linux.
- * pre installed git in linux 
+ * pre installed docker in linux.To install [click here](https://docs.docker.com/engine/install/)
+ * pre installed jenkins in linux.TO information regarding install [click here](https://www.jenkins.io/download/)
+ * pre installed git in linux.To install [click here](https://git-scm.com/download/linux)
