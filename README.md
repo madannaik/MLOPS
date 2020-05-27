@@ -2,9 +2,9 @@
 ***This document discusses techniques for implementing and automating continuous integration (CI) of machine learning (ML) system***  
 
 Data science and ML are becoming core capabilities for solving complex real-world problems, transforming industries, and delivering value in all domains. Currently, the ingredients for applying effective ML are available to you:
- *Large datasets
- *Inexpensive on-demand compute resources
- *Rapid advances in different ML research fields.
+  * Large datasets
+  * Inexpensive on-demand compute resources
+  * Rapid advances in different ML research fields.
 
 Therefore, many businesses are investing in their data science teams and ML capabilities to develop predictive models that can deliver business value to their users.
 
