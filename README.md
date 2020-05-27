@@ -1,4 +1,4 @@
-# MLOps: Continuous delivery and automation pipelines in machine learning
+# MLOps : machine learning and operations
 ***This document discusses techniques for implementing and automating continuous integration (CI) of machine learning (ML) system***  
 
 Data science and ML are becoming core capabilities for solving complex real-world problems, transforming industries, and delivering value in all domains. Currently, the ingredients for applying effective ML are available to you:
