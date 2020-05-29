@@ -10,9 +10,10 @@ This project documentation is for data scientists and ML engineers who want to a
  * pre installed git in linux.To install [click here](https://git-scm.com/download/linux)
 
 # ***setting up docker***
-  * build the images using the dockerfile given in Dockerfile folder 
-    
-    - docker build -t your_image_name:version .
+ build the images using the dockerfile given in Dockerfile folder 
+     
+     - docker build -t your_image_name:version .
       
 # ***JENKINS***  
-1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the 
+1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and copy it to developer folder
+![](/images/mlops automated traning [Jenkins]%20%-%20%Personal%20%-%20%Microsoft​%20%Edge%20%5_29_2020%20%4_18_33%20%PM.png)
