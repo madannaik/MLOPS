@@ -58,20 +58,20 @@ when the desired accuracy is achieved then **JOB4** take the role in play
 	       1)
 	       sudo sed -i "32i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
 	       ;;
-	    2)
-	    sudo sed 's/epoch = 10/epoch = 20/g' keras.py
-	    ;;
-            3)
-	    sudo sed -i "33i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
+	       2)
+	       sudo sed 's/epoch = 10/epoch = 20/g' keras.py
+	       ;;
+               3)
+	       sudo sed -i "33i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
                sed -i "34i model.add(MaxPoling2D(pool_size=(2,2))" keras.py
-	    ;;
-	  esac	
-      done
-    fi
-    yes| sudo cp -f /root/developer/keras.py '/root/keras-CNN'
-    sudo 'cd /root/keras-CNN'
-    sudo git commit keras.py -m "hello"
-    sudo git push
-    exit 1
+	       ;;
+	     esac	
+         done
+       fi
+       yes| sudo cp -f /root/developer/keras.py '/root/keras-CNN'
+       sudo 'cd /root/keras-CNN'
+       sudo git commit keras.py -m "hello"
+       sudo git push
+       exit 1
 
 ![](images/image5.png)
