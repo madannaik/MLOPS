@@ -65,7 +65,7 @@ when the desired accuracy is achieved then **JOB4** take the role in play
 	       sudo sed -i "33i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
                         sed -i "34i model.add(MaxPoling2D(pool_size=(2,2))" keras.py
 	       ;;
-	     esac	
+	    esac	
          done
        fi
        yes| sudo cp -f /root/developer/keras.py '/root/keras-CNN'
