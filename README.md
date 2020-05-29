@@ -8,3 +8,7 @@ This project documentation is for data scientists and ML engineers who want to a
  * pre installed docker in linux.To install [click here](https://docs.docker.com/engine/install/)
  * pre installed jenkins in linux.Information regarding install [click here](https://www.jenkins.io/download/)
  * pre installed git in linux.To install [click here](https://git-scm.com/download/linux)
+
+# setting up docker
+ * build the images using the dockerfile given in Dockerfile folder 
+    - docker compose up -d your_image_name:version .
