@@ -99,4 +99,4 @@ jenkins job5 takes the updated code and trained model weights and  updates it to
 
 
 
-***In collobration with : nagaraj ankola. ***
+***In collobration with : nagaraj ankola.***
