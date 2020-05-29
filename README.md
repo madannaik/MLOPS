@@ -78,10 +78,10 @@ when the desired accuracy is achieved then **JOB4** take the role in play
 
 
 4)**JOB4**:Notifies the developer that the beat model has been impelmented in email format
-![](images/images8.png)
+![](images/image8.png)
 
 5)**JOB5**:jenkins job5 pushes the updated code and model trained weigth will be updated to github repository
-![](images/images9.png)
+![](images/images.png)
 
 
 
