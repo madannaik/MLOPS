@@ -15,5 +15,9 @@ This project documentation is for data scientists and ML engineers who want to a
      - docker build -t your_image_name:version .
       
 # ***JENKINS***  
-1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and copy it to developer folder
-![](images/image1.png)
+1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and datasets and then copy it to developer folder in base system 
+![](images/image2.png)
+![](images/image3.png)
+
+2) **JOB2**:checks the downlaoded the code and analyses wheather it's a CNN/ANN/LINEAR_REGRESSION code and lauches respective docker container in linux system for training the model
+![](images/image4.png)
