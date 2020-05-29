@@ -16,6 +16,18 @@ This project documentation is for data scientists and ML engineers who want to a
       
 # ***JENKINS***  
 1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and datasets and then copy it to developer folder in base system 
+   
+    
+    
+       - if [ '$(sudo cat /root/developer/kears.py)|sudo grep Convolution2D' ]
+       - then
+       -   sudo docker run -t -v  /root/developer/:/hello/ --rm keras:v1 /hello/keras.py 
+       - elif [ '$(sudo cat /root/developer/kears.py)|sudo grep sklearn' ]
+       - then
+       -   sudo docker run -t -v /root/developer/:/hello/ --rm   sklearn:v1 /hello/keras.py
+       -fi
+
+
 ![](images/image2.png)
 ![](images/image3.png)
 
