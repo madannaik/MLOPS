@@ -15,14 +15,16 @@ This project documentation is for data scientists and ML engineers who want to a
      - docker build -t your_image_name:version .
       
 # ***JENKINS***  
-1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and datasets and then copy it to developer folder in base system 
+1) **JOB1**:
+Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and datasets and then copy it to developer folder in base system 
    
 ![](images/image2.png)
 ![](images/image3.png)
 
 
 
-2) **JOB2**:checks the downlaoded the code and analyses wheather it's a CNN/ANN/LINEAR_REGRESSION code and lauches respective docker container in linux system for training the model
+2) **JOB2**:
+checks the downlaoded the code and analyses wheather it's a CNN/ANN/LINEAR_REGRESSION code and lauches respective docker container in linux system for training the model
 
        #copy the above code in execute shell
        if [ '$(sudo cat /root/developer/kears.py)|sudo grep Convolution2D' ]
@@ -37,7 +39,8 @@ This project documentation is for data scientists and ML engineers who want to a
 
 
 
-3) **JOB3**:Checks the accuracy of the trained model and if the accuarcy is not over 90% then **JOB3** tweak the architecture of the model and push back the code to github to retrain the model for  better accuracy.This cycle goes until accuracy of 90% is not acchieved.
+3) **JOB3**:
+Checks the accuracy of the trained model and if the accuarcy is not over 90% then **JOB3** tweak the architecture of the model and push back the code to github to retrain the model for  better accuracy.This cycle goes until accuracy of 90% is not acchieved.
 when the desired accuracy is achieved then **JOB4** take the role in play
         
        sudo cd /root/developer
@@ -77,14 +80,23 @@ when the desired accuracy is achieved then **JOB4** take the role in play
 ![](images/image5.png)
 
 
-4)**JOB4**:Notifies the developer that the beat model has been impelmented in email format
+4)**JOB4**:
+Notifies the developer that the best model has been impelmented through email format
+
 ![](images/image8.png)
 
-5)**JOB5**:jenkins job5 pushes the updated code and model trained weigth will be updated to github repository
+5)**JOB5**:
+jenkins job5 takes the updated code and trained model weights and  updates it to github repository.
+
 ![](images/images.png)
 
 
 
-Finally the build pipeline view of the above job is:
-![](images/image1.png)
+# Finally the build pipeline view of the above jenkins job is:
+ 
+ 
+ ![](images/image1.png)
 
+
+
+***In collobration with : nagaraj ankola. ***
