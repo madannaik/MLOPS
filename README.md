@@ -40,33 +40,33 @@ This project documentation is for data scientists and ML engineers who want to a
 3) **JOB3**:Checks the accuracy of the trained model and if the accuarcy is not over 90% then **JOB3** tweak the architecture of the model and push back the code to github to retrain the model for  better accuracy.This cycle goes until accuracy of 90% is not acchieved.
 when the desired accuracy is achieved then **JOB4** take the role in play
         
-    sudo cd /root/developer
-    requiredacc=0.90
-    if [ '$accInt -ge $requiredacc' ]
-    then 
-      exit 0
-    else
-    #random in bw 123
-    x=1
-    y=2
-    DIFF=$((y+x))
-    accInt=$(sudo cat /root/developer/accuracy.txt)
-    while [ $accInt -lt $requiredacc ] 
-    do
-	   case $(echo  $(($(($RANDOM%DIFF))+x))) 
-	   in
-		   1)
-		   sudo sed -i "32i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
-		   ;;
-		   2)
-		   sudo sed 's/epoch = 10/epoch = 20/g' keras.py
-		   ;;
-		   3)
-		   sudo sed -i "33i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
-                  sed -i "34i model.add(MaxPoling2D(pool_size=(2,2))" keras.py
-		   ;;
-	    esac	
-     done
+       sudo cd /root/developer
+      requiredacc=0.90
+      if [ '$accInt -ge $requiredacc' ]
+      then 
+        exit 0
+      else
+      #random in bw 123
+      x=1
+      y=2
+      DIFF=$((y+x))
+      accInt=$(sudo cat /root/developer/accuracy.txt)
+      while [ $accInt -lt $requiredacc ] 
+      do
+         case $(echo  $(($(($RANDOM%DIFF))+x))) 
+	 in
+	    1)
+	    sudo sed -i "32i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
+	    ;;
+	    2)
+	    sudo sed 's/epoch = 10/epoch = 20/g' keras.py
+	    ;;
+            3)
+	    sudo sed -i "33i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
+               sed -i "34i model.add(MaxPoling2D(pool_size=(2,2))" keras.py
+	    ;;
+	  esac	
+      done
     fi
     yes| sudo cp -f /root/developer/keras.py '/root/keras-CNN'
     sudo 'cd /root/keras-CNN'
