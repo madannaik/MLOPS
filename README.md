@@ -54,14 +54,14 @@ when the desired accuracy is achieved then **JOB4** take the role in play
          while [ $accInt -lt $requiredacc ] 
          do
             case $(echo  $(($(($RANDOM%DIFF))+x))) 
-	       in
+	        in
 	       1)
 	       sudo sed -i "32i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
 	       ;;
 	       2)
 	       sudo sed 's/epoch = 10/epoch = 20/g' keras.py
 	       ;;
-            3)
+           3)
 	       sudo sed -i "33i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
                         sed -i "34i model.add(MaxPoling2D(pool_size=(2,2))" keras.py
 	       ;;
@@ -75,3 +75,16 @@ when the desired accuracy is achieved then **JOB4** take the role in play
        exit 1
 
 ![](images/image5.png)
+
+
+4)**JOB4**:Notifies the developer that the beat model has been impelmented in email format
+![](images/images8.png)
+
+5)**JOB5**:jenkins job5 pushes the updated code and model trained weigth will be updated to github repository
+![](images/images9.png)
+
+
+
+Finally the build pipeline view of the above job is:
+![](images/image1.png)
+
