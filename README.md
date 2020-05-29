@@ -16,4 +16,4 @@ This project documentation is for data scientists and ML engineers who want to a
       
 # ***JENKINS***  
 1) **JOB1**:Checks the github repository for every one minute and if any developer pushes the code to github jenkins download the code and copy it to developer folder
-![](/images/mlops automated traning [Jenkins]%20%-%20%Personal%20%-%20%Microsoft​%20%Edge%20%5_29_2020%20%4_18_33%20%PM.png)
+![](images/mlops automated traning [Jenkins] - Personal - Microsoft​ Edge 5_29_2020 4_18_33 PM.png)
