@@ -10,7 +10,7 @@ This project documentation is for data scientists and ML engineers who want to a
  * install git in linux.To install [click here](https://git-scm.com/download/linux)
 
 # ***setting up docker***
- build the images using the dockerfile given in Dockerfile folder 
+ Build the images using the dockerfile given in Dockerfile folder here we created the two images both with different libraries   installed, keras and sckit-learn respectively. We will be configuring the image in such a way that as soon as the container is launched using these image along with the model it should automatically starts to train the model.
      
      - docker build -t your_image_name:version .
       
@@ -24,7 +24,9 @@ Checks the github repository for every one minute and if any developer pushes th
 
 
 2) **JOB2**:
-checks the downloaded the code and analyses wheather it's a CNN/ANN/LINEAR_REGRESSION code and lauches respective docker container in linux system for training the model
+This job checks the downloaded the code and analyses wheather it's a CNN/ANN/LINEAR_REGRESSION code and lauches respective docker container in linux system for training the model along with the model. The code is built in such a way that as soon as it is trained, it's final accuracy will be saved in accuracy.txt file in the same folder which will be required later.
+
+
 
        #copy the above code in execute shell
        if [ '$(sudo cat /root/developer/kears.py)|sudo grep Convolution2D' ]
@@ -56,7 +58,7 @@ when the desired accuracy is achieved then **JOB4** take the role in play
          accInt=$(sudo cat /root/developer/accuracy.txt)
          while [ $accInt -lt $requiredacc ] 
          do
-            case $(echo  $(($(($RANDOM%DIFF))+x))) 
+            case $(echo  $(($(($RANDOM%DIFF))+x)))   #randomly choode numbers between 1 to 3
 	        in
 	       1)
 	       sudo sed -i "32i model.add(Convolution2D(48,(3,3),activation='relu'))" keras.py
