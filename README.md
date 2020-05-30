@@ -85,12 +85,14 @@ when the desired accuracy is achieved then **JOB4** take the role in play
 4)**JOB4**:
 Notifies the developer that the best model has been impelmented through email format
 
-![](images/image8.png)
+
+
+
 
 5)**JOB5**:
 jenkins job5 takes the updated code and trained model weights and  updates it to github repository.
 
-![](images/images.png)
+![](images/image8.png)
 
 
 
